@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import "./App.scss";
 import { useState } from "react";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
@@ -59,6 +60,19 @@ function App() {
 			/>
 		</div>
 	);
+=======
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+      </Routes>
+    </BrowserRouter>
+  );
+>>>>>>> Stashed changes
 }
 
 export default App;
