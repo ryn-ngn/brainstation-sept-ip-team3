@@ -1,0 +1,40 @@
+.maps__header {
+	// position: fixed;
+	// top: 0;
+	// z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.maps__header-content {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 1rem;
+	margin-bottom: 0.5rem;
+}
+.maps__input-wrapper {
+	display: flex;
+	gap: 1rem;
+}
+.maps__btn-wrapper {
+	display: flex;
+	gap: 0.5rem;
+}
+.maps__input {
+	border-radius: 0.4rem;
+	border-color: grey;
+	height: 1.5rem;
+	padding: 0 0.5rem;
+}
+.maps__btn {
+	border-radius: 0.4rem;
+	border-color: grey;
+	padding: 0.25rem 0.5rem;
+}
+.maps__icon {
+	border-radius: 50%;
+	padding: 0.3rem 0.35rem 0 0.35rem;
+	border-color: grey;
+}
