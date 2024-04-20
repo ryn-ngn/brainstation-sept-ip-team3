@@ -36,5 +36,16 @@ function Routes({ origin, destination, routeIndex, setRoutes, mapCenter }) {
 
   return <div>Routes</div>;
 }
+// Simulate geolocation using mock data
+const getCurrentLocation = () => {
+  // Mock latitude and longitude coordinates
+  const latitude = 37.7749;
+  const longitude = -122.4194;
+  console.log("Latitude:", latitude);
+  console.log("Longitude:", longitude);
+  // Use latitude and longitude to perform further actions
+};
 
+// Call the function to get the current location
+getCurrentLocation();
 export default Routes;

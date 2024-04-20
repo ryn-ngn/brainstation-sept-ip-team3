@@ -24,8 +24,20 @@ export default function GGMap() {
     return <div>Loading ...</div>;
   }
 
+  // get current location - feature supported by browser
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      const latitude = position.coords.latitude.toFixed(5);
+      const longitude = position.coords.longitude.toFixed(5);
+      setOrigin(`${latitude},${longitude}`);
+    },
+    (error) => {
+      console.error("Error getting current location:", error);
+    }
+  );
+
   return (
-    <div className="maps">
+    <div>
       <Header
         setOrigin={setOrigin}
         setDestination={setDestination}
