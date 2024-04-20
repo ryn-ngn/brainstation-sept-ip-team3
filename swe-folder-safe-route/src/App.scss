@@ -1,0 +1,24 @@
+@use "./styles/fonts.scss" as *;
+@use "./styles/mixins.scss" as *;
+
+*,
+* ::before,
+* ::after {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "avenir-next";
+}
+
+.maps {
+	padding: 0.5em;
+
+	&__container {
+		width: 100%;
+		height: 60vh;
+		border: 3px solid lightgray;
+	}
+}
