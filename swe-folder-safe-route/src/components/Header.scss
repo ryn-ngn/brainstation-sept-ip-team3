@@ -1,3 +1,5 @@
+@use "../styles/mixins.scss" as *;
+
 .maps__header {
 	// position: fixed;
 	// top: 0;
@@ -5,7 +7,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
 }
 .maps__header-content {
 	display: flex;
@@ -13,10 +14,24 @@
 	gap: 0.5rem;
 	padding: 1rem;
 	margin-bottom: 0.5rem;
+
+	@include mobile {
+		flex-direction: column;
+		width: 100%;
+		border-radius: 0.5rem;
+		border: 1px solid #bdc5d5;
+	}
 }
 .maps__input-wrapper {
 	display: flex;
+	text-align: center;
 	gap: 1rem;
+
+	@include mobile {
+		flex-direction: column;
+		gap: 0.5rem;
+		width: 100%;
+	}
 }
 .maps__btn-wrapper {
 	display: flex;
@@ -25,8 +40,9 @@
 .maps__input {
 	border-radius: 0.4rem;
 	border-color: grey;
-	height: 1.5rem;
-	padding: 0 0.5rem;
+	padding: 0.3rem;
+	width: 100%;
+	max-width: 400px;
 }
 .maps__btn {
 	border-radius: 0.4rem;
