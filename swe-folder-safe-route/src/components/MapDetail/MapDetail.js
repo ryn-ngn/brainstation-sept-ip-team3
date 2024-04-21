@@ -1,23 +1,25 @@
 import "./MapDetail.scss";
 import { useState } from "react";
+import firstRoute from "../../assets/images/firstRoute.png";
+import secondRoute from "../../assets/images/secondRoute.png";
 
 function MapDetail({ origin, destination, routes, setRouteIndex }) {
-  const [activeRoute, setActiveRoute] = useState(0);
+	const [activeRoute, setActiveRoute] = useState(0);
 
-  const handleClick = (index) => {
-    setRouteIndex(index);
-    setActiveRoute(index);
-  };
+	const handleClick = (index) => {
+		setRouteIndex(index);
+		setActiveRoute(index);
+	};
 
-  return (
-    <>
-      {routes.length > 0 && (
+	return (
+		<>
+			{/* {routes.length > 0 && (
         <div className="maps__details">
           <h3 className="maps__route">
-            {/* Direction:{" "}
+            Direction:{" "}
 						<span className="maps__route-direction">
 							{origin.split(",")[0]} to {destination.split(",")[0]}
-						</span> */}
+						</span>
             Routes:
           </h3>
           {routes.map((route, index) => (
@@ -40,9 +42,15 @@ function MapDetail({ origin, destination, routes, setRouteIndex }) {
             </div>
           ))}
         </div>
-      )}
-    </>
-  );
+      )} */}
+			<div>
+				<img src={firstRoute} alt="First Route Image" onClick={() => handleClick(0)} />
+			</div>
+			<div>
+				<img src={secondRoute} alt="Second Route Image" onClick={() => handleClick(1)} />
+			</div>
+		</>
+	);
 }
 
 export default MapDetail;
