@@ -1,59 +1,52 @@
 @use "../../styles/mixins.scss" as *;
 
-.maps__header {
-  position: absolute;
-  top: 3.5rem;
-  z-index: 1;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-.maps__header-content {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1rem;
-  margin-bottom: 0.5rem;
-
-  @include mobile {
-    flex-direction: column;
-    width: 100%;
-    border-radius: 0.5rem;
-    border: 1px solid #bdc5d5;
-  }
-}
-.maps__input-wrapper {
-  display: flex;
-  text-align: center;
-  gap: 1rem;
-
-  @include mobile {
-    flex-direction: column;
+.maps {
+  &__header-content {
+    display: flex;
+    align-items: center;
     gap: 0.5rem;
-    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+      border-radius: 0.5rem;
+      border: 1px solid #bdc5d5;
+    }
   }
-}
-.maps__btn-wrapper {
-  display: flex;
-  gap: 0.5rem;
-}
-.maps__input {
-  border-radius: 1.75rem;
-  border-color: grey;
-  padding: 1rem;
-  width: 100%;
-  height: 3.5rem;
-  max-width: 400px;
-  font-size: 1rem;
-}
-.maps__btn {
-  border-radius: 0.4rem;
-  border-color: grey;
-  padding: 0.25rem 0.5rem;
-}
-.maps__icon {
-  border-radius: 50%;
-  padding: 0.3rem 0.35rem 0 0.35rem;
-  border-color: grey;
+  &__input-wrapper {
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+    }
+  }
+  &__btn-wrapper {
+    display: flex;
+    gap: 0.5rem;
+  }
+  &__input {
+    border-radius: 1.75rem;
+    border-color: grey;
+    padding: 1rem;
+    width: 100%;
+    height: 3.5rem;
+    max-width: 400px;
+    font-size: 1rem;
+  }
+  &__btn {
+    border-radius: 0.4rem;
+    border-color: grey;
+    padding: 0.25rem 0.5rem;
+  }
+  &__icon {
+    border-radius: 50%;
+    padding: 0.3rem 0.35rem 0 0.35rem;
+    border-color: grey;
+  }
 }

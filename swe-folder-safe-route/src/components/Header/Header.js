@@ -21,16 +21,6 @@ function Header({ setDestination, setMapCenter, Autocomplete }) {
   return (
     <header className="maps__header">
       <form onSubmit={handleFormSubmit} className="maps__header-content">
-        <div className="maps__input-wrapper">
-          <Autocomplete>
-            <input
-              className="maps__input"
-              name="destination"
-              type="text"
-              placeholder="Destination"
-            />
-          </Autocomplete>
-        </div>
         <div className="maps__btn-wrapper">
           <button className="maps__btn" type="submit">
             Get Routes

@@ -1,0 +1,15 @@
+.search-result {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  &__get-direction {
+    height: 48px;
+    width: 140px;
+
+    position: absolute;
+    top: 618px;
+    left: 10px;
+    z-index: 5;
+  }
+}

@@ -8,9 +8,9 @@ import Routes from "../Routes";
 const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 export default function GGMap() {
-  const center = { lat: 43.64238, lng: -79.39674 };
-  const [origin, setOrigin] = useState("");
-  const [destination, setDestination] = useState("");
+  const center = { lat: 41.84544, lng: -87.62782 };
+  const [origin, setOrigin] = useState("41.84549, -87.62649");
+  const [destination, setDestination] = useState("41.83529, -87.61674");
   const [routes, setRoutes] = useState([]);
   const [routeIndex, setRouteIndex] = useState(0);
   const [mapCenter, setMapCenter] = useState(true);
@@ -24,26 +24,8 @@ export default function GGMap() {
     return <div>Loading ...</div>;
   }
 
-  // get current location - feature supported by browser
-  navigator.geolocation.getCurrentPosition(
-    (position) => {
-      const latitude = position.coords.latitude.toFixed(5);
-      const longitude = position.coords.longitude.toFixed(5);
-      setOrigin(`${latitude},${longitude}`);
-    },
-    (error) => {
-      console.error("Error getting current location:", error);
-    }
-  );
-
   return (
-    <div>
-      <Header
-        setOrigin={setOrigin}
-        setDestination={setDestination}
-        setMapCenter={setMapCenter}
-        Autocomplete={Autocomplete}
-      />
+    <div className="maps">
       <div className="maps__container">
         <APIProvider apiKey={apiKey}>
           <Map
@@ -64,6 +46,7 @@ export default function GGMap() {
           </Map>
         </APIProvider>
       </div>
+
       <MapDetail
         origin={origin}
         destination={destination}
