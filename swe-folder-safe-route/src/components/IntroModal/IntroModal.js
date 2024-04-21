@@ -1,9 +1,10 @@
 import "./IntroModal.scss";
 import { useEffect, useState } from "react";
 import peopleImg from "../../assets/images/peopleImg.png";
+import thumpsup from "../../assets/images/thumpsup.png";
 import Button from "react-bootstrap/Button";
-import ModalContent from "./ModelContent";
-
+import ModalContent from "./ModalContent";
+import { ContentArr } from "./ContentAsset";
 export default function IntroModal() {
   const [showModal, setShowModal] = useState(false);
   const [currentModalPage, setCurrentModalPage] = useState(0);
@@ -11,7 +12,7 @@ export default function IntroModal() {
   const handleNextIteration = () => {
     // Update the current iteration based on previous state
     setCurrentModalPage(currentModalPage + 1);
-    if (currentModalPage > 1) {
+    if (currentModalPage > 2) {
       setShowModal(false);
       setCurrentModalPage(0);
     }
@@ -29,39 +30,15 @@ export default function IntroModal() {
 
   if (!showModal) return null;
 
-  const contentArr = [
-    {
-      title: "Welcome To Google Companion",
-      text: `This feature uses AI to enhance your safety while navigating. Click through to see how it works!`,
-    },
-    {
-      title: "Safety First",
-      text: `Google Companion uses crime data to generate safer walking routes. It's like having a knowledgeable friend guiding you on your journey.`,
-    },
-    {
-      title: "Tailored Recommendations",
-      text: `Google Companion uses crime data to generate safer walking routes. It's like having a knowledgeable friend guiding you on your journey.`,
-    },
-    {
-      title: "You’re In Control",
-      text: "Your trust is important to us. You can turn off the Google Companion feature at any time. We're here to help, but you decide how and when.",
-    },
-    {
-      title: "Data Protection",
-      text: "We use your data only to improve your app experience and ensure safety. Your data remains private and exclusively shapes the AI's behaviour and recommendations.",
-    },
-  ];
-
   const renderContent = () => {
     switch (currentModalPage) {
       case 0:
         return (
           <div>
             <ModalContent
-              isImgRequired={true}
               imgSrc={peopleImg}
-              h2Content={contentArr[0].title}
-              pContent={contentArr[0].text}
+              h2Content={ContentArr[0].title}
+              pContent={ContentArr[0].text}
             />
           </div>
         );
@@ -69,12 +46,12 @@ export default function IntroModal() {
         return (
           <div>
             <ModalContent
-              h2Content={contentArr[1].title}
-              pContent={contentArr[1].text}
+              h2Content={ContentArr[1].title}
+              pContent={ContentArr[1].text}
             />{" "}
             <ModalContent
-              h2Content={contentArr[2].title}
-              pContent={contentArr[2].text}
+              h2Content={ContentArr[2].title}
+              pContent={ContentArr[2].text}
             />
           </div>
         );
@@ -82,13 +59,19 @@ export default function IntroModal() {
         return (
           <div>
             <ModalContent
-              h2Content={contentArr[3].title}
-              pContent={contentArr[3].text}
+              h2Content={ContentArr[3].title}
+              pContent={ContentArr[3].text}
             />{" "}
             <ModalContent
-              h2Content={contentArr[4].title}
-              pContent={contentArr[4].text}
+              h2Content={ContentArr[4].title}
+              pContent={ContentArr[4].text}
             />
+          </div>
+        );
+      case 3:
+        return (
+          <div>
+            <ModalContent imgSrc={thumpsup} pContent={ContentArr[4].text} />
           </div>
         );
       default:
