@@ -1,17 +1,15 @@
 import DestinationReachedToast from "../components/DestinationReachedToast/DestinationReachedToast";
 import GGMap from "../components/GGMap/GGMap";
 import IntroModal from "../components/IntroModal/IntroModal";
-import RecommendedRoutes from "../components/RecommendedRoutes/RecommendedRoutes";
-import SearchBar from "../components/SearchBar/SearchBar";
+import "./Landing.scss";
 
 export default function Landing() {
   return (
-    <>
-      <SearchBar />
+    <div className="maps">
       <IntroModal />
       <GGMap />
-      <RecommendedRoutes />
+
       <DestinationReachedToast />
-    </>
+    </div>
   );
 }

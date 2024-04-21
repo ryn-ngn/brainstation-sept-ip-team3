@@ -1,0 +1,8 @@
+.maps {
+  position: relative;
+  &__container {
+    width: 100%;
+    height: 60vh;
+    border: 3px solid lightgray;
+  }
+}
