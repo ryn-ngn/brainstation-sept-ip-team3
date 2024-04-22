@@ -1,0 +1,34 @@
+.arrived {
+  background-image: url(../../assets/images/onRoute.png);
+  background-size: 100% auto;
+  height: 100vh;
+  .modal-overlay {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 24, 44, 0.3);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    justify-content: space-around;
+    .modal-content {
+      position: absolute;
+      text-align: center;
+      z-index: 5;
+      top: 20rem;
+      left: 3rem;
+      width: 20rem;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 1.25rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      img {
+        padding-top: 1rem;
+        width: 17.5rem;
+      }
+    }
+  }
+}

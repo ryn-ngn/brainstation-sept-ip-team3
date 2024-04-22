@@ -9,3 +9,10 @@
     @content;
   }
 }
+
+@mixin routes-start-button-styling {
+  height: 3rem;
+  width: 6rem;
+  position: absolute;
+  left: 1rem;
+}

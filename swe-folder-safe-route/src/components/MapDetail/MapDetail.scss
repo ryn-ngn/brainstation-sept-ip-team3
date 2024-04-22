@@ -1,18 +1,29 @@
-.maps__details {
-	padding-top: 1rem;
-}
-.maps__route-detail {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
-	margin-bottom: 0.8rem;
-	// width: 50%;
-	padding: 0.5rem;
-	border: 1px solid #bdc5d5;
-	border-radius: 0.5rem;
-	cursor: pointer;
+@use "../../styles/mixins.scss" as *;
 
-	&--active {
-		background-color: #f7f8f9;
-	}
+.maps__details {
+  position: relative;
+  .start-button-1 {
+    @include routes-start-button-styling;
+    top: 8.5rem;
+  }
+
+  .start-button-2 {
+    @include routes-start-button-styling;
+    top: 4rem;
+  }
 }
+// .maps__route-detail {
+// 	display: flex;
+// 	flex-direction: column;
+// 	gap: 0.5rem;
+// 	margin-bottom: 0.8rem;
+// 	// width: 50%;
+// 	padding: 0.5rem;
+// 	border: 1px solid #bdc5d5;
+// 	border-radius: 0.5rem;
+// 	cursor: pointer;
+
+// 	&--active {
+// 		background-color: #f7f8f9;
+// 	}
+// }

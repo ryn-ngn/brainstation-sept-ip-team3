@@ -1,7 +1,12 @@
 import "./NotificationModal.scss";
 import { useEffect, useState } from "react";
 
-export default function NotificationModal({ heading, content }) {
+export default function NotificationModal({
+  heading,
+  content,
+  arrivalNoticeRequired,
+  setShowRating,
+}) {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
@@ -14,7 +19,10 @@ export default function NotificationModal({ heading, content }) {
     };
   }, []);
 
-  const handleCloseModal = () => {
+  const handleCloseModal = (e) => {
+    if (arrivalNoticeRequired && e.target.className === "btn-yes") {
+      setShowRating(true);
+    }
     setShowModal(false);
   };
 

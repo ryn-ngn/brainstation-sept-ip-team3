@@ -6,21 +6,9 @@ import SearchEntered from "./pages/Search/SearchEntered/SearchEntered";
 import SearchResult from "./pages/Search/SearchResult/SearchResult";
 import RouteOptions from "./pages/RouteOptions/RouteOptions";
 import OnRoute from "./pages/OnRoute/OnRoute";
+import Arrived from "./pages/Arrived/Arrived";
 
 function App() {
-<<<<<<< HEAD
-	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<Landing />} />
-				<Route path="/search" element={<Search />} />
-				<Route path="/searchEntered" element={<SearchEntered />} />
-				<Route path="/searchResult" element={<SearchResult />} />
-				<Route path="/routes" element={<RouteOptions />} />
-			</Routes>
-		</BrowserRouter>
-	);
-=======
   return (
     <BrowserRouter>
       <Routes>
@@ -30,10 +18,10 @@ function App() {
         <Route path="/searchResult" element={<SearchResult />} />
         <Route path="/routes" element={<RouteOptions />} />
         <Route path="/onRoute" element={<OnRoute />} />
+        <Route path="/arrived" element={<Arrived />} />
       </Routes>
     </BrowserRouter>
   );
->>>>>>> dev-flash-light-modal
 }
 
 export default App;

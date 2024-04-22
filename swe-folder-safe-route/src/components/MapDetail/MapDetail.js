@@ -2,18 +2,24 @@ import "./MapDetail.scss";
 import { useState } from "react";
 import firstRoute from "../../assets/images/firstRoute.png";
 import secondRoute from "../../assets/images/secondRoute.png";
+import { useNavigate } from "react-router-dom";
 
 function MapDetail({ origin, destination, routes, setRouteIndex }) {
-	const [activeRoute, setActiveRoute] = useState(0);
+  const navigate = useNavigate();
+  const [activeRoute, setActiveRoute] = useState(0);
 
-	const handleClick = (index) => {
-		setRouteIndex(index);
-		setActiveRoute(index);
-	};
+  const handleClick = (index) => {
+    setRouteIndex(index);
+    setActiveRoute(index);
+  };
 
-	return (
-		<>
-			{/* {routes.length > 0 && (
+  const handleClickStart = (index) => {
+    navigate("/onRoute");
+  };
+
+  return (
+    <>
+      {/* {routes.length > 0 && (
         <div className="maps__details">
           <h3 className="maps__route">
             Direction:{" "}
@@ -43,14 +49,16 @@ function MapDetail({ origin, destination, routes, setRouteIndex }) {
           ))}
         </div>
       )} */}
-			<div>
-				<img src={firstRoute} alt="First Route Image" onClick={() => handleClick(0)} />
-			</div>
-			<div>
-				<img src={secondRoute} alt="Second Route Image" onClick={() => handleClick(1)} />
-			</div>
-		</>
-	);
+      <div className="maps__details">
+        <img src={firstRoute} alt="First Route" onClick={() => handleClick(0)} />
+        <div className="start-button-1" onClick={handleClickStart}></div>
+      </div>
+      <div className="maps__details">
+        <img src={secondRoute} alt="Second Route" onClick={() => handleClick(1)} />
+        <div className="start-button-2" onClick={handleClickStart}></div>
+      </div>
+    </>
+  );
 }
 
 export default MapDetail;

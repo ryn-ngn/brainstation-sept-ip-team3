@@ -2,4 +2,13 @@
   background-image: url(../../assets/images/onRoute.png);
   background-size: 100% auto;
   height: 100vh;
+  &__exit {
+    height: 48px;
+    width: 4rem;
+
+    position: absolute;
+    bottom: 0.6rem;
+    right: 2rem;
+    z-index: 5;
+  }
 }
