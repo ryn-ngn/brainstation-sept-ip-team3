@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.17189992.css",
-    "main.js": "/static/js/main.a9eaa07d.js",
-    "static/media/thumpsup.png": "/static/media/thumpsup.0cb848f1df7f2b3ca8d0.png",
-    "static/media/searchResultSrcShot.png": "/static/media/searchResultSrcShot.242693786534dfc982e0.png",
-    "static/media/onRoute.png": "/static/media/onRoute.e779c4e40d78911686a9.png",
-    "static/media/landingscrshot.png": "/static/media/landingscrshot.d0ee588b5722111cc45f.png",
-    "static/media/AvenirNextLTPro.ttf": "/static/media/AvenirNextLTPro.3f6c730b0f59f3838d71.ttf",
-    "static/media/AvenirNextLTProBold.ttf": "/static/media/AvenirNextLTProBold.3c6bf152ce9d23ec3657.ttf",
-    "static/media/AvenirNextLTProDemi.ttf": "/static/media/AvenirNextLTProDemi.fb429fb77c296de90537.ttf",
-    "static/media/AvenirNextLTPro-Bold.otf": "/static/media/AvenirNextLTPro-Bold.abfbc7167526a2d9f205.otf",
-    "static/media/AvenirNextLTPro-Demi.otf": "/static/media/AvenirNextLTPro-Demi.318a19f02737e3a265c8.otf",
-    "static/media/firstRoute.png": "/static/media/firstRoute.13eb0a7b4faaa50e34a7.png",
-    "static/media/AvenirNextLTPro-Regular.otf": "/static/media/AvenirNextLTPro-Regular.75d8c490a81ae1a6be46.otf",
-    "static/media/secondRoute.png": "/static/media/secondRoute.b81f82ee1a69f888b220.png",
-    "static/media/peopleImg.png": "/static/media/peopleImg.71f7eb6c37d6c062029f.png",
-    "static/media/routesTop.png": "/static/media/routesTop.607fb34c33eb7d7fb593.png",
-    "static/media/ratingScrShot.png": "/static/media/ratingScrShot.c907ab3077371bfa8d1d.png",
-    "static/media/searchscrshot.png": "/static/media/searchscrshot.c2015642f3d31052add4.png",
-    "index.html": "/index.html",
-    "main.17189992.css.map": "/static/css/main.17189992.css.map",
-    "main.a9eaa07d.js.map": "/static/js/main.a9eaa07d.js.map"
+    "main.css": "/brainstation-sept-ip-team3/static/css/main.4813c0a9.css",
+    "main.js": "/brainstation-sept-ip-team3/static/js/main.ffb5ba05.js",
+    "static/media/thumpsup.png": "/brainstation-sept-ip-team3/static/media/thumpsup.0cb848f1df7f2b3ca8d0.png",
+    "static/media/searchResultSrcShot.png": "/brainstation-sept-ip-team3/static/media/searchResultSrcShot.242693786534dfc982e0.png",
+    "static/media/onRoute.png": "/brainstation-sept-ip-team3/static/media/onRoute.e779c4e40d78911686a9.png",
+    "static/media/landingscrshot.png": "/brainstation-sept-ip-team3/static/media/landingscrshot.d0ee588b5722111cc45f.png",
+    "static/media/AvenirNextLTPro.ttf": "/brainstation-sept-ip-team3/static/media/AvenirNextLTPro.3f6c730b0f59f3838d71.ttf",
+    "static/media/AvenirNextLTProBold.ttf": "/brainstation-sept-ip-team3/static/media/AvenirNextLTProBold.3c6bf152ce9d23ec3657.ttf",
+    "static/media/AvenirNextLTProDemi.ttf": "/brainstation-sept-ip-team3/static/media/AvenirNextLTProDemi.fb429fb77c296de90537.ttf",
+    "static/media/AvenirNextLTPro-Bold.otf": "/brainstation-sept-ip-team3/static/media/AvenirNextLTPro-Bold.abfbc7167526a2d9f205.otf",
+    "static/media/AvenirNextLTPro-Demi.otf": "/brainstation-sept-ip-team3/static/media/AvenirNextLTPro-Demi.318a19f02737e3a265c8.otf",
+    "static/media/firstRoute.png": "/brainstation-sept-ip-team3/static/media/firstRoute.13eb0a7b4faaa50e34a7.png",
+    "static/media/AvenirNextLTPro-Regular.otf": "/brainstation-sept-ip-team3/static/media/AvenirNextLTPro-Regular.75d8c490a81ae1a6be46.otf",
+    "static/media/secondRoute.png": "/brainstation-sept-ip-team3/static/media/secondRoute.b81f82ee1a69f888b220.png",
+    "static/media/peopleImg.png": "/brainstation-sept-ip-team3/static/media/peopleImg.71f7eb6c37d6c062029f.png",
+    "static/media/routesTop.png": "/brainstation-sept-ip-team3/static/media/routesTop.607fb34c33eb7d7fb593.png",
+    "static/media/ratingScrShot.png": "/brainstation-sept-ip-team3/static/media/ratingScrShot.c907ab3077371bfa8d1d.png",
+    "static/media/searchscrshot.png": "/brainstation-sept-ip-team3/static/media/searchscrshot.c2015642f3d31052add4.png",
+    "index.html": "/brainstation-sept-ip-team3/index.html",
+    "main.4813c0a9.css.map": "/brainstation-sept-ip-team3/static/css/main.4813c0a9.css.map",
+    "main.ffb5ba05.js.map": "/brainstation-sept-ip-team3/static/js/main.ffb5ba05.js.map"
   },
   "entrypoints": [
-    "static/css/main.17189992.css",
-    "static/js/main.a9eaa07d.js"
+    "static/css/main.4813c0a9.css",
+    "static/js/main.ffb5ba05.js"
   ]
 }
